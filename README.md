@@ -1,5 +1,5 @@
 # Analysis of DRS data from chikungunya virus
-Scripts used in the analysis of Direct RNA nanopore sequencing (DRS) data included in article: **N6-methyladenosine modification is not a general trait of viral RNA genomes**
+Scripts used in the analysis of Direct RNA nanopore sequencing (DRS) data included in article: Baquero-Perez et al., **N6-methyladenosine modification is not a general trait of viral RNA genomes**
 
 ### Basecalling and demultiplexing:
 The module [mop_preprocess](https://biocorecrg.github.io/master_of_pores/nanopreprocess.html) module from [Master of Pores2](https://github.com/biocorecrg/MOP2) pipeline was used to perform basecalling, with guppy (version 3.1.5, model rna_r9.4.1_70bps_hac), and demultiplexing - when needed - with Deeplexicon (version 1.2.0). Then, it also mapped the basecalled reads to the suitable viral reference (for chikungunya: `ref/Chikungunya_genome.fa` and for adenovirus: `ref/Ad5_transcriptome.fa`) with miniamap2 (version 2.17) with unspliced parameters (-uf -k14 -ax map-ont). Moreover, same parameters were used to align reads to the to the human transcriptome from Ensembl, based on assembly GRCh38 (ref/HomoSapiens_GRCh38_transcriptome.fa.gz). To execute this module, please add these parameters into both `params.config` and `tools_opt.tsv` files and run the command below: 
@@ -56,4 +56,4 @@ nextflow run mop_consensus.nf -with-singularity -bg > log.txt
 
 ## Citation
 
-Baquero-Perez B*, Yonchez ID*, Delgado-Tejedor A*, Medina R,  N6-methyladenosine modification is not a general trait of viral RNA genomes
+Baquero-Perez B*, Yonchez ID*, Delgado-Tejedor A*, Medina R,Puig-Torrents M, Sudbery I, Begik O, Wilson SA, Novoa EM, Diez J. N6-methyladenosine modification is not a general trait of viral RNA genomes. 
