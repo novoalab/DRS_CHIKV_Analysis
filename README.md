@@ -56,4 +56,4 @@ nextflow run mop_consensus.nf -with-singularity -bg > log.txt
 
 ## Citation
 
-Baquero-Perez B*, Yonchez ID*, Delgado-Tejedor A*, Medina R,Puig-Torrents M, Sudbery I, Begik O, Wilson SA, Novoa EM, Diez J. N6-methyladenosine modification is not a general trait of viral RNA genomes. 
+Baquero-Perez B*, Yonchez ID*, Delgado-Tejedor A*, Medina R,Puig-Torrents M, Sudbery I, Begik O, Wilson SA, Novoa EM, Diez J. [N6-methyladenosine modification is not a general trait of viral RNA genomes](https://www.nature.com/articles/s41467-024-46278-9#MOESM1). Nature Communications 2024.
